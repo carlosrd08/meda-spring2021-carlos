@@ -8,6 +8,65 @@
     
     <title>HTML Summary</title>
 
+    <style>
+
+        body{
+            background-color: gray;
+        }
+
+        p{
+            color: blue;
+            font-size:1em;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-style: italic;
+            line-height: 2em;
+            word-spacing: 11px;
+            letter-spacing: 2px;
+        }
+
+        h1{
+            color: red;
+        }
+
+        ul li{
+            color: pink;
+        }
+
+        ol li{
+            color: orange;
+        }
+
+        input{
+            background-color: white;
+        }
+
+
+/* calling an element ID takes priority over an element tag  */
+        #special{
+            color: yellow;
+            font-size: 2em;
+        }
+
+        #password{
+            background-color: blue;
+        }
+
+        #submitbutton{
+            background-color: greenyellow;
+        }
+
+        img {
+            width: 400px;
+            height: 350px;
+            border-width: 2px;
+            border-color: orange;
+            border-style: solid;
+            border-radius: 10px;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -53,8 +112,8 @@
 
             <figure>
 
-                <img src="doesnotexist.jpg" alt="thisi is an image file that doesn not exist." width="200" height="200" />
-                <figcaption>This is a caption of a figure</figcaption>
+                <img src="pexels-steshka-willems-1661950.jpg" alt="thisi is an image file that doesn not exist." width="200" height="200" />
+                <figcaption id="special">This is a caption of a figure</figcaption>
 
             </figure>
 
@@ -81,7 +140,7 @@
                 <input id="username" type="text" />
                 <label for="password">Password</label>
                 <input id="password" type="password" />
-                <input type="submit" />
+                <input id="submitbutton" type="submit" />
 
             </form>
 
